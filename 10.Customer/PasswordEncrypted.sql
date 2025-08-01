@@ -8,7 +8,7 @@ CREATE OR REPLACE PROCEDURE PasswordEncrypted(
 )
 BEGIN
 
-SELECT SHA2('asd' , 256) INTO encryptedPassword;
+SELECT SHA2(password , 256) INTO encryptedPassword;
 
 END //
 
