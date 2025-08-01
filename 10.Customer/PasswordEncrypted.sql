@@ -2,7 +2,7 @@
 
 delimiter //
 
-CREATE PROCEDURE PasswordEncrypted(
+CREATE OR REPLACE PROCEDURE PasswordEncrypted(
     IN password varchar(255),
     OUT encryptedPassword VARCHAR(255)
 )
