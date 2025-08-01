@@ -1,7 +1,7 @@
 -- login 프로시저
 delimiter //
 
-create or replace procedure login(
+create or replace procedure Login(
     in userEmail varchar(255),
     in userPassward varchar(255),
     out returnMessage varchar(2000)
