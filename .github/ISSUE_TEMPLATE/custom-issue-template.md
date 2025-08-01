@@ -10,13 +10,13 @@ assignees: ''
 # 💫 ISSUE
 작업을 입력해주세요.
 
-## Description
+## ✏️ Description
 작업에 대한 설명을 입력해주세요.
 
-## To Do
+## 📖 To Do
 - [ ] list
 - [ ] list
 - [ ] list
 
-## ETC
+## 💡 ETC
 기타 사항을 입력해주세요.
