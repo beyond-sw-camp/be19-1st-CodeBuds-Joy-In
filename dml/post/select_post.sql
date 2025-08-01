@@ -4,13 +4,12 @@ SELECT
      , title
      , content
      , a.created_by
-     , updated_by
      , views
      , start_date
      , end_date
-     , status
-     , recruit_status
-     , recruit_end_date
+     , recruitment_capacity
+     , recruitment_status
+     , recruitment_deadline
      , current_count
      , c.name
      , b.nickname
@@ -27,7 +26,6 @@ SELECT
      , title
      , content
      , a.created_by
-     , updated_by
      , views
      , c.name
      , b.nickname
@@ -44,13 +42,12 @@ SELECT
      , title
      , content
      , a.created_by
-     , updated_by
      , views
      , start_date
      , end_date
-     , status
-     , recruit_status
-     , recruit_end_date
+     , recruitment_capacity
+     , recruitment_status
+     , recruitment_deadline
      , current_count
      , c.name
      , b.nickname
@@ -72,13 +69,12 @@ BEGIN
          , title
          , content
          , a.created_by
-         , updated_by
          , views
          , start_date
          , end_date
-         , status
-         , recruit_status
-         , recruit_end_date
+         , recruitment_capacity
+         , recruitment_status
+         , recruitment_deadline
          , current_count
          , c.name
          , b.nickname
