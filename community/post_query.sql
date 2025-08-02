@@ -24,9 +24,9 @@ CREATE or replace PROCEDURE AutoClosed (
     IN CurCount INTEGER
 )
 BEGIN
-    IF EXISTS (SELECT 1 FROM post WHERE post_id = p_post_id AND recurit_status = CurCount) THEN
+    IF EXISTS (SELECT 1 FROM post WHERE post_id = p_post_id AND recruitment_capacity = CurCount) THEN
 UPDATE post
-SET status = 1,
+SET recruitment_status = 1,
     recruit_end_date = NOW()
 WHERE post_id = p_post_id;
 END IF;
@@ -36,32 +36,42 @@ END //
 delimiter ;
 
 -- 방장이 참여자를 강퇴시킨 경우
-delimiter //
-CREATE OR REPLACE TRIGGER ForcedEviction
-    AFTER UPDATE
-                                   ON join_request
-                                   FOR EACH ROW
+delimiter
+//
+CREATE
+OR REPLACE TRIGGER ForcedEviction
+    AFTER
+UPDATE
+    ON join_request
+    FOR EACH ROW
 BEGIN
-    DECLARE post_status INTEGER;
+    DECLARE
+post_status INTEGER;
 
-    if NEW.status = 'N' AND OLD.status <> 'N' then
+    if
+NEW.status = 'N' AND OLD.status <> 'N' then
 UPDATE post
 SET current_count = current_count - 1
 WHERE post_id = NEW.post_id;
 
 
-SELECT status INTO post_status FROM post WHERE post_id = NEW.post_id;
+SELECT recruitment_status
+INTO post_status
+FROM post
+WHERE post_id = NEW.post_id;
 
-if post_status = 1 then
+if
+post_status = 1 then
 UPDATE post
-SET STATUS = 0
+SET recruitment_status = 0
 WHERE post_id = NEW.post_id;
 
 END if;
 END if;
 
 
-END //
+END
+//
 
 delimiter ;
 
@@ -80,7 +90,7 @@ BEGIN
     DECLARE EXIT HANDLER FOR not_valid_date
 
 begin
-            IF (NEW.recruit_status < NEW.current_count AND NEW.board_id = 2) THEN
+            IF (NEW.recruitment_capacity < NEW.current_count AND NEW.board_id = 2) THEN
                 SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '게시글 수정이 불가능합니다.';
 END IF;
 END;
@@ -145,7 +155,7 @@ WHERE post_id = postID;
 
 if end_date < NOW() then
 UPDATE post
-SET STATUS = 2
+SET recruitment_status = 2
 WHERE post_id = postID;
 END if;
 
