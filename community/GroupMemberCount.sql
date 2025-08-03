@@ -10,7 +10,7 @@ BEGIN
     IF NEW.status = 'Y' AND OLD.status <> 'Y' THEN
 UPDATE post
 SET current_count = IFNULL(current_count, 0) + 1
-WHERE post_id = NEW.post_id;
+WHERE id = NEW.post_id;
 END IF;
 END //
 
