@@ -479,22 +479,35 @@ ALTER TABLE notice
 	<summary>관리자</summary>
 	<details>
 		<summary>1:1 매칭 성사 조회</summary>
+		<br><p>- member_matching 테이블 조회</p>
 		<img width="1232" height="553" alt="Image" src="https://github.com/user-attachments/assets/7bc631c0-4309-46b3-9d27-93e45bd867b9" />
+		<br><br><p>- 매칭 아이디가 같고 certification이 1인 행만 조회</p>
 		<img width="866" height="637" alt="Image" src="https://github.com/user-attachments/assets/7539995f-3d47-473a-b263-e07bff11396c" />
 	</details>
 	<details>
 		<summary>게시글 모임 성사 조회</summary>
+		<br><p>- join_request 테이블 조회</p>
   		<img width="1162" height="446" alt="Image" src="https://github.com/user-attachments/assets/b825f37f-044e-4b7a-b7db-18b19fb312b5" />
+		<br><br><p>- 게시글 아이디가 같고 certification이 1인 행의 멤버ID, 이름, 성별, 게시글ID, 제목 조회</p>
 		<img width="1052" height="533" alt="Image" src="https://github.com/user-attachments/assets/25000dcb-2d69-42c6-84c6-3d4c698cd765" />
+		<br><br><p>- 조회한 것과 게시글ID의 제목이 같은지 확인</p>
 		<img width="775" height="272" alt="Image" src="https://github.com/user-attachments/assets/77e37001-70ee-42fe-9156-8cdadf471209" />
+		<br><br><p>- 조회한 것과 회원ID의 정보가 같은지 확인</p>
 		<img width="655" height="281" alt="Image" src="https://github.com/user-attachments/assets/bab114ce-a89d-4c3f-b233-dd5be6de3cdd" />
 	</details>
 	<details>
 		<summary>정지 등록 & 해제</summary>
+		<br><p>- member_ban 테이블에 어떤 행도 없음을 확인</p>
 		<img width="1506" height="277" alt="Image" src="https://github.com/user-attachments/assets/c054c01f-49fb-485f-9c53-ab30bbe32583" />
+		<br><br><p>- 회원을 정지시키고 member_ban 테이블 조회</p>
+		<img width="1452" height="297" alt="Image" src="https://github.com/user-attachments/assets/5f07b880-95a7-476f-be49-6e4fde9bc961" />
+		<br><br><p>- 시스템 시간이 end_date가 되도록 end_date값을 같은 날 18시 45분으로 업데이트</p>
 		<img width="807" height="303" alt="Image" src="https://github.com/user-attachments/assets/0fa7423b-c746-43e1-a886-afa2092479ab" />
+		<br><br><p>- member 테이블을 조회하여 회원번호가 2번이 아직 상태가 3(정지)인 것을 확인</p>
 		<img width="1452" height="340" alt="Image" src="https://github.com/user-attachments/assets/a4f6b781-a1fa-4a56-b6cc-ba64aeb4fe0f" />
+		<br><br><p>- 1분마다 end_date가 시스템 시간을 넘는지 확인하고 넘으면 다시 상태를 1(정상)으로 update하는 trigger를 설정</p>
 		<img width="806" height="253" alt="Image" src="https://github.com/user-attachments/assets/388e146e-b515-4a69-99ee-72a876851f6b" />
+		<br><br><p>- 시스템 시간이 18시 45분이 되어 member테이블을 조회하여 회원번호 2번의 상태가 1(정상)으로 돌아온 것을 확인</p>
 		<img width="1557" height="707" alt="Image" src="https://github.com/user-attachments/assets/82619ff4-6ca7-4fcd-bb7a-7fb7f6bdccd0" />
 	</details>
 </details>
