@@ -6,7 +6,8 @@ DELIMITER //
 -- 유저에게 매칭을 제안하는 프로시저
 CREATE PROCEDURE set_matching_active_status(
    IN user_id INT,
-   OUT is_possible TINYINT
+   OUT is_possible TINYINT,
+   OUT output_text VARCHAR(255)
 )
 
 BEGIN
@@ -47,6 +48,7 @@ BEGIN
                -- 제재된지 30분이 안되었으면 변경이 안된다.
              ELSE
                   SET is_possible = 0;
+                  SET output_text = '제재된지 30분이 안되었습니다.';
               END IF;
        END IF;
 END //
