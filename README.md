@@ -492,7 +492,7 @@ ALTER TABLE notice
 - 매칭 & 커뮤니티
   <br><a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/DML" target="_blank"> 🪝커뮤니티 테이블 별 프로시저/트리거/쿼리 </a>
   <br><a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/community" target="_blank"> 🪝post/join_request 관련 프로시저/트리거/쿼리 </a>
-  <br><a href="(https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/develop/DML_Matching)" target="_blank"> 🪝매칭및 후기 관련 프로시저/트리거/쿼리 </a>
+  <br><a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/develop/DML_Matching" target="_blank"> 🪝매칭및 후기 관련 프로시저/트리거/쿼리 </a>
 
 - 관리자
   <Br><a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/admin" target="_blank"> 🪝관리자 프로시저/트리거/쿼리 </a>
