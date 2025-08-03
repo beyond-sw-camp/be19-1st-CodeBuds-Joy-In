@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS likes  
+(
+	 id INTEGER PRIMARY  KEY  AUTO_INCREMENT ,
+	 created_by DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	 post_id INTEGER NOT NULL,
+	 member_id INTEGER NOT NULL
+);
+
+ALTER TABLE likes 
+ADD CONSTRAINT fk_likes_post_post_id FOREIGN KEY (post_id) REFERENCES post(id);
+
+ALTER TABLE likes 
+ADD CONSTRAINT fk_likes_member_member_id FOREIGN KEY (member_id) REFERENCES member(id);
