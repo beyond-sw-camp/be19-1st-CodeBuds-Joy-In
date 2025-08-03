@@ -520,7 +520,7 @@ ALTER TABLE notice
 		<br><br><p>- 동행 확정인원수 갱신 트리거</p>
 		<img width="826" height="655" alt="Image" src="https://github.com/user-attachments/assets/e3552ffe-a156-470e-b3c6-350db62d3098" />
 		<br><br><p>- 강퇴 시 작동 트리거</p>
-		<img width="692" height="755" alt="Image" src="https://github.com/user-attachments/assets/0a8fce72-13df-4835-9544-b443510ee329" />
+		<img width="1358" height="1500" alt="Image" src="https://github.com/user-attachments/assets/193a6134-ae00-43e0-968b-65a29d2ea001" />
 		<br><br><p>- 동행 게시글의 모집 확정된 인원수 확인</p>
 		<img width="1229" height="626" alt="Image" src="https://github.com/user-attachments/assets/5f979aee-2f2c-4501-bd9a-ed1e3a9b837b" />
 		<br><br><p>- 모집인원수를 채우면 자동 마감</p>
