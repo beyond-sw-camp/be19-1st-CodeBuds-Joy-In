@@ -14,10 +14,10 @@
 ## 2. 주요 기능
 
 ## 3. 요구사항 명세서
-
+<img width="1826" height="1804" alt="Image" src="https://github.com/user-attachments/assets/e0f04d94-cead-4a10-aeb3-3f6ad48796bf" />
 
 ## 4. WBS
-
+<img width="3140" height="1458" alt="Image" src="https://github.com/user-attachments/assets/d7a6d22b-4e5d-4fd4-8132-b37a8c688962" />
 
 ## 5. DB 모델링
 ### 논리 모델링
