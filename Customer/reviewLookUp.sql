@@ -21,4 +21,4 @@ join(
              , created_by
           from matching_review
   ) as b
-on a.id = b.id
+on a.id = b.id;

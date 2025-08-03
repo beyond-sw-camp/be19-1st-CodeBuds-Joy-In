@@ -35,7 +35,7 @@ VALUES
     (NULL, '게시글/댓글 도배', 1);
 
 -- 블랙리스트 기준
-INSERT INTO Report
+INSERT INTO report
 VALUES
     (1, '인신공격'),
     (2, '욕설/비방'),

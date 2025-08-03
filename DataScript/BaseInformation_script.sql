@@ -37,7 +37,7 @@ VALUES
 
 
 -- 블랙리스트 기준
-INSERT INTO Report
+INSERT INTO report
 VALUES
 (1, '인신공격'),
 (2, '욕설/비방'),
