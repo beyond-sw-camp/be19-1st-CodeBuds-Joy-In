@@ -14,7 +14,8 @@
 ## 2. 주요 기능
 
 ## 3. 요구사항 명세서
-<img width="1826" height="1804" alt="Image" src="https://github.com/user-attachments/assets/e0f04d94-cead-4a10-aeb3-3f6ad48796bf" />
+
+<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTbzFSfMc7xw5tNd2A0PAL6z-a-O3o-sPAqGgODT9_A_0e6yksYnKfb_XYyZvTIJG3IviuHjZW66t6y/pubhtml?gid=441658633&single=true" target="_blank"> 🪝요구사항 명세서 </a>
 
 ## 4. WBS
 <img width="3140" height="1458" alt="Image" src="https://github.com/user-attachments/assets/d7a6d22b-4e5d-4fd4-8132-b37a8c688962" />
