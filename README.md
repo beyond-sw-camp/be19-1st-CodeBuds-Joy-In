@@ -1,4 +1,4 @@
-
+<img width="655" height="281" alt="스크린샷 2025-08-03 190842" src="https://github.com/user-attachments/assets/2c2b2109-dd0c-46de-852a-8f60ea4dc830" /><img width="775" height="272" alt="스크린샷 2025-08-03 190810" src="https://github.com/user-attachments/assets/8ea4af4a-dedb-40a2-b7ad-5e99e865d698" />
 # Joy-In🚤
 <img width="600" height="380" alt="Image" src="https://github.com/user-attachments/assets/0a37d6b1-7b43-4073-8c5c-39fd128eb43a" />
 
@@ -463,5 +463,40 @@ ALTER TABLE notice
 
 
 ## 8. Test Case
+<details>
+	<summary>회원</summary>
+</details>
+
+<details>
+	<summary>커뮤니티</summary>
+</details>
+
+<details>
+	<summary>매칭</summary>
+</details>
+
+<details>
+	<summary>관리자</summary>
+	<details>
+		<summary>1:1 매칭 성사 조회</summary>
+		<img width="1232" height="553" alt="Image" src="https://github.com/user-attachments/assets/7bc631c0-4309-46b3-9d27-93e45bd867b9" />
+		<img width="866" height="637" alt="Image" src="https://github.com/user-attachments/assets/7539995f-3d47-473a-b263-e07bff11396c" />
+	</details>
+	<details>
+		<summary>게시글 모임 성사 조회</summary>
+  		<img width="1162" height="446" alt="Image" src="https://github.com/user-attachments/assets/b825f37f-044e-4b7a-b7db-18b19fb312b5" />
+		<img width="1052" height="533" alt="Image" src="https://github.com/user-attachments/assets/25000dcb-2d69-42c6-84c6-3d4c698cd765" />
+		<img width="775" height="272" alt="Image" src="https://github.com/user-attachments/assets/77e37001-70ee-42fe-9156-8cdadf471209" />
+		<img width="655" height="281" alt="Image" src="https://github.com/user-attachments/assets/bab114ce-a89d-4c3f-b233-dd5be6de3cdd" />
+	</details>
+	<details>
+		<summary>정지 등록 & 해제</summary>
+		<img width="1506" height="277" alt="Image" src="https://github.com/user-attachments/assets/c054c01f-49fb-485f-9c53-ab30bbe32583" />
+		<img width="807" height="303" alt="Image" src="https://github.com/user-attachments/assets/0fa7423b-c746-43e1-a886-afa2092479ab" />
+		<img width="1452" height="340" alt="Image" src="https://github.com/user-attachments/assets/a4f6b781-a1fa-4a56-b6cc-ba64aeb4fe0f" />
+		<img width="806" height="253" alt="Image" src="https://github.com/user-attachments/assets/388e146e-b515-4a69-99ee-72a876851f6b" />
+		<img width="1557" height="707" alt="Image" src="https://github.com/user-attachments/assets/82619ff4-6ca7-4fcd-bb7a-7fb7f6bdccd0" />
+	</details>
+</details>
 
 ## 9. 회고록
