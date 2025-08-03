@@ -7,7 +7,8 @@ CREATE TABLE IF NOT EXISTS board_report
 	 reply_id INTEGER NULL,
 	 report_id INTEGER NOT NULL,
 	 member_id INTEGER NULL,
-     CONSTRAINT ch_board_report_member_member_id CHECK(CHAR_LENGTH(reason) >= 40)
+	 admin_status CHAR NOT NULL DEFAULT 'U' CHECK(admin_status IN ('Y', 'N', 'U')),
+	 CONSTRAINT ch_board_report_member_member_id CHECK(CHAR_LENGTH(reason) >= 40)
 );
 
 ALTER TABLE board_report 
