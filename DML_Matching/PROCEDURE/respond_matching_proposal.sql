@@ -18,7 +18,7 @@ BEGIN
       -- 해당 매칭이 성사되었음으로 변경
 		UPDATE matching
          SET status = 1
-       WHERE id = user_matching_code1;
+       WHERE id = user_matching_code;
  ELSE 
       UPDATE member
          SET is_matching_active = 1
@@ -27,17 +27,17 @@ BEGIN
    -- 유저별 1:1 매칭에 기록
 INSERT INTO member_matching(status,certification, member_id, matching_id)
 VALUES 
-		 (user_response1, 0, user_id1, user_matching_code1),
-       (user_response2, 0, user_id2, user_matching_code2);    
+		 (user_response1, 0, user_id1, user_matching_code),
+       (user_response2, 0, user_id2, user_matching_code);    
 -- 응답을 완료한 타임에 시간을 업데이트
 UPDATE matching
    SET start_date = NOW()
- WHERE id = user_matching_code1;
+ WHERE id = user_matching_code;
 	
 SELECT 
        status INTO matching_status
   FROM matching
- WHERE id = user_matching_code1;
+ WHERE id = user_matching_code;
     
 
 END//

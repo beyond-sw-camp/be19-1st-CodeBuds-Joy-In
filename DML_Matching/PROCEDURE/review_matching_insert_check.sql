@@ -3,22 +3,41 @@ DROP PROCEDURE IF EXISTS review_matching_insert_check;  -- 일대일 매칭 후�
 DELIMITER //
 
 CREATE PROCEDURE review_matching_insert_check(
-  IN member_matching_id INT,
+  IN user_id  INT,
+  IN input_matching_id INT,
   IN input_score INT,
   IN input_review VARCHAR(2000),
-  IN input_target_member_id INT,
   OUT is_possible TINYINT 
 )
 BEGIN 
    DECLARE is_certified TINYINT;
+   DECLARE input_target_member_id INT;
 	DECLARE is_review TINYINT;
+   DECLARE member_matching_id INT;
 -- 후기를 작성할 수 있는 상태인지 확인
 -- 1. 만남인증이 1인 상태일 것
 -- 2. 이미 후기를 작성한 사람이 아닐 것
-    SELECT 
+    
+	 SELECT 
+	        id INTO member_matching_id
+	   FROM member_matching
+	  WHERE member_id = user_id AND matching_id = input_matching_id;
+	 
+	 SELECT 
            certification INTO is_certified
       FROM member_matching
      WHERE id = member_matching_id;
+     
+    SELECT
+           member_id INTO input_target_member_id
+      FROM member_matching
+     WHERE matching_id = ( 
+	                        SELECT 
+									       matching_id 
+									  FROM member_matching 
+									 WHERE id = member_matching_id
+								 ) 
+		 AND member_id != user_id;
      
     SELECT
            COUNT(*) INTO is_review

@@ -48,7 +48,7 @@ BEGIN
                -- 제재된지 30분이 안되었으면 변경이 안된다.
              ELSE
                   SET is_possible = 0;
-                  SET output_text = '제재된지 30분이 안되었습니다.';
+                  SET output_text = '연속 5회 거절하여 30분간 사용이 제한되었습니다.';
               END IF;
        END IF;
 END //

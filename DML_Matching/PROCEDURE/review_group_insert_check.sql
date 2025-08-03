@@ -3,7 +3,8 @@ DROP PROCEDURE IF EXISTS review_group_insert_check;     -- 그룹모임에서 �
 DELIMITER //
 
 CREATE PROCEDURE review_group_insert_check(
-  IN input_join_request_id INT,
+  IN user_id INT,
+  IN input_post_id INT,
   IN input_score INT,
   IN input_review VARCHAR(2000),
   IN input_target_member_id INT,
@@ -14,11 +15,16 @@ proc: BEGIN
 	DECLARE is_certified TINYINT;
 	DECLARE is_other_certified TINYINT;
 	DECLARE is_review TINYINT;
-	
+	DECLARE input_join_request_id INT;
 -- 후기를 작성할 수 있는 상태인지 확인
 -- 1. 만남인증이 1인 상태일 것
 -- 2. 이미 후기를 작성한 사람이 아닐 것matching_reviewmatching_review
     SELECT 
+           id INTO input_join_request_id
+      FROM join_request
+     WHERE member_id = user_id AND post_id = input_post_id;
+	 
+	 SELECT 
 	        member_id INTO reviewer_id
 	   FROM join_request
 	  WHERE id = input_join_request_id;
