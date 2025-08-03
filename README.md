@@ -537,6 +537,14 @@ ALTER TABLE notice
 
 <details>
 	<summary>매칭</summary>
+	<br><p>- 매칭 제안 및 응답 </p>
+	<img width="1232" height="553" alt="Image" src="https://github.com/user-attachments/assets/5b4e7dea-816b-419e-994d-b19468d1d088" />
+	<br><p>- 매칭 5회 연속 거절로 인한 매칭 제재 </p>
+	<img width="1232" height="553" alt="Image" src="https://github.com/user-attachments/assets/5b29178e-f4fc-4e60-aa98-01c9ab01f832" />
+	<br><p>- 매칭 제안 및 응답 </p>
+	<img width="1232" height="553" alt="Image" src="https://github.com/user-attachments/assets/147cb424-a83d-4b2e-9e41-2fa830359081" />
+
+  
 </details>
 
 <details>
