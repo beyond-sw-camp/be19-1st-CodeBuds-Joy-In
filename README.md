@@ -511,11 +511,11 @@ ALTER TABLE notice
 		<br><br><p>- 동행 요청 수락/거절</p>
 		<img width="2912" height="1134" alt="Image" src="https://github.com/user-attachments/assets/a3df6287-0610-4c4f-8e06-2ac580cef5af" />
 		<br><br><p>- 동행 확정인원수 갱신 트리거</p>
-		<img width="1652" height="1310" alt="Image" src="https://github.com/user-attachments/assets/e3552ffe-a156-470e-b3c6-350db62d3098" />
+		<img width="826" height="655" alt="Image" src="https://github.com/user-attachments/assets/e3552ffe-a156-470e-b3c6-350db62d3098" />
 		<br><br><p>- 강퇴 시 작동 트리거</p>
-		<img width="1384" height="1510" alt="Image" src="https://github.com/user-attachments/assets/0a8fce72-13df-4835-9544-b443510ee329" />
+		<img width="692" height="755" alt="Image" src="https://github.com/user-attachments/assets/0a8fce72-13df-4835-9544-b443510ee329" />
 		<br><br><p>- 동행 게시글의 모집 확정된 인원수 확인</p>
-		<img width="2458" height="1252" alt="Image" src="https://github.com/user-attachments/assets/5f979aee-2f2c-4501-bd9a-ed1e3a9b837b" />
+		<img width="1229" height="626" alt="Image" src="https://github.com/user-attachments/assets/5f979aee-2f2c-4501-bd9a-ed1e3a9b837b" />
 		<br><br><p>- 모집인원수를 채우면 자동 마감</p>
 		<img width="2824" height="1160" alt="Image" src="https://github.com/user-attachments/assets/8dfb4f46-4fee-4af5-8a29-debc516e905c" />
 		<br><br><p>- 자동마감 프로시저</p>
@@ -527,6 +527,11 @@ ALTER TABLE notice
 		<img width="3420" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0863fdef-59b3-4412-9db0-1a1666771faf" />
 		<br><br><p>- 게시글 및 댓글 신고 관리자 승인 및 거절</p>
 		<img width="2158" height="1288" alt="Image" src="https://github.com/user-attachments/assets/e99a2b47-cbbd-4576-bd5e-e3b9b4b91614" />
+		<br><br><p>- 누적된 게시글/댓글 신고 수 확인 트리거</p>
+		<img width="1494" height="1374" alt="Image" src="https://github.com/user-attachments/assets/0ebdb0a4-363c-45f3-bde1-dbe167174882" />
+		<img width="1512" height="1374" alt="Image" src="https://github.com/user-attachments/assets/81ad4881-13b0-4849-9d22-2ef01a45cd02" />
+		<br><br><p>- 같은 회원이 10번 이상 신고당할 시 블랙리스트</p>
+		<img width="2888" height="1036" alt="Image" src="https://github.com/user-attachments/assets/12b5e2b7-a0f9-4645-9606-eb028ea2ba14" />
 	</details>
 </details>
 
