@@ -487,13 +487,19 @@ ALTER TABLE notice
 
 ## 7. DML
 - 회원
+  <a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/Customer" target="_blank"> 🪝회원 프로시저/쿼리 </a>
 
 - 매칭 & 커뮤니티
+  <a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/DML" target="_blank"> 🪝커뮤니티 테이블 별 프로시저/트리거/쿼리 </a>
+  <a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/community" target="_blank"> 🪝post/join_request 관련 프로시저/트리거/쿼리 </a>
 
 - 관리자
+  <a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/admin" target="_blank"> 🪝관리자 프로시저/트리거/쿼리 </a>
 
 
 ## 8. Test Case
+<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTbzFSfMc7xw5tNd2A0PAL6z-a-O3o-sPAqGgODT9_A_0e6yksYnKfb_XYyZvTIJG3IviuHjZW66t6y/pubhtml?gid=423249820&single=true" target="_blank"> 🪝테이블케이스 </a>
+
 <details>
 	<summary>회원</summary>
 </details>
