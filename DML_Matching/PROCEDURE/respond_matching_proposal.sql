@@ -9,7 +9,8 @@ CREATE PROCEDURE respond_matching_proposal(
     IN user_response1      CHAR,
     IN user_response2      CHAR,
     IN user_matching_code1 INT,
-    IN user_matching_code2 INT
+    IN user_matching_code2 INT,
+    OUT matching_status    TINYINT
 )
 
 BEGIN
@@ -33,6 +34,11 @@ BEGIN
 		    (user_response1, 0, user_id1, user_matching_code1),
           (user_response2, 0, user_id2, user_matching_code2); 
    
+   SELECT 
+          STATUS INTO matching_status
+     FROM matching
+    WHERE id = user_matching_code1;
+    
 END//
 
 DELIMITER ;

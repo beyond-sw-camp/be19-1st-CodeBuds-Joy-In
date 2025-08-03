@@ -25,8 +25,9 @@ SET @user_response1 = 'Y';
 SET @user_response2 = 'Y';
 SET @user_matching_code1 = @matching_code;
 SET @user_matching_code2 = @matching_code;
+SET @matching_status = 0;
 
-CALL respond_matching_proposal(@out_user1, @out_user2, @user_response1, @user_response2, @user_matching_code1, @user_matching_code2);
+CALL respond_matching_proposal(@out_user1, @out_user2, @user_response1, @user_response2, @user_matching_code1, @user_matching_code2, @matching_status);
 
 -- SELECT * FROM matching;
 -- SELECT * FROM member_matching;
