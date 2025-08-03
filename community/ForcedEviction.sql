@@ -7,7 +7,7 @@ CREATE OR REPLACE TRIGGER ForcedEviction
 BEGIN
     DECLARE post_status INTEGER;
     if
-        NEW.status = 'N' AND OLD.status <> 'N' then
+        NEW.status = 'N' AND OLD.status = 'Y' then
         UPDATE post
         SET current_count = current_count - 1
         WHERE id = NEW.post_id;
