@@ -24,11 +24,11 @@ CREATE or replace PROCEDURE AutoClosed (
     IN CurCount INTEGER
 )
 BEGIN
-    IF EXISTS (SELECT 1 FROM post WHERE post_id = p_post_id AND recruitment_capacity = CurCount) THEN
+    IF EXISTS (SELECT 1 FROM post WHERE id = p_post_id AND recruitment_capacity = CurCount) THEN
 UPDATE post
 SET recruitment_status = 1,
-    recruit_end_date = NOW()
-WHERE post_id = p_post_id;
+    recruitment_deadline = NOW()
+WHERE id = p_post_id;
 END IF;
 
 END //
@@ -148,15 +148,15 @@ CREATE or replace PROCEDURE AutoCancel(
 BEGIN -- 모집상태(status)를 2로 바꾸기
     DECLARE end_date DATETIME;
 
-SELECT recruit_end_date
+SELECT recruitment_deadline
 INTO end_date
 FROM post
-WHERE post_id = postID;
+WHERE id = postID;
 
 if end_date < NOW() then
 UPDATE post
 SET recruitment_status = 2
-WHERE post_id = postID;
+WHERE id = postID;
 END if;
 
 END //
