@@ -5,7 +5,7 @@ DELIMITER //
 
 -- 유저에게 매칭을 제안하는 프로시저
 CREATE PROCEDURE matching_user_to_user(
-    IN user_index          INT,
+--    IN user_index          INT,
 	 OUT out_user1_id       INT,
 	 OUT out_user2_id       INT,
 	 OUT matching_code      INT
@@ -15,8 +15,8 @@ BEGIN
 
    DECLARE first_user_id   INT;
    DECLARE second_user_id  INT;
-   DECLARE next_index      INT;
-       SET next_index = user_index + 1;
+--   DECLARE next_index      INT;
+--       SET next_index = user_index + 1;
    -- 첫 번째 유저 id
     SELECT 
 	        id INTO first_user_id
@@ -25,8 +25,10 @@ BEGIN
 				       id 
 				  FROM member
 			    WHERE is_matching_active = 1
-				 ORDER BY id
-				 LIMIT user_index, 1
+			    ORDER BY RAND()
+			    LIMIT 1
+--				 ORDER BY id
+--				 LIMIT user_index, 1
 			  ) AS sub1;
 			   
    -- 두  번째 유저 id
@@ -35,8 +37,11 @@ BEGIN
             SELECT id 
 				  FROM member
 			    WHERE is_matching_active = 1
-			    ORDER BY id
-		       LIMIT next_index, 1
+			      AND id != first_user_id
+			    ORDER BY RAND()
+			    LIMIT 1
+--			    ORDER BY id
+--		       LIMIT next_index, 1
 			  ) AS sub2;
 			  
 	    SET out_user1_id = first_user_id;
