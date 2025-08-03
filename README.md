@@ -1,4 +1,4 @@
-<img width="655" height="281" alt="스크린샷 2025-08-03 190842" src="https://github.com/user-attachments/assets/2c2b2109-dd0c-46de-852a-8f60ea4dc830" /><img width="775" height="272" alt="스크린샷 2025-08-03 190810" src="https://github.com/user-attachments/assets/8ea4af4a-dedb-40a2-b7ad-5e99e865d698" />
+
 # Joy-In🚤
 <img width="600" height="380" alt="Image" src="https://github.com/user-attachments/assets/0a37d6b1-7b43-4073-8c5c-39fd128eb43a" />
 
