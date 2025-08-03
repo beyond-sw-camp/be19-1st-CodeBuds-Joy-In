@@ -455,6 +455,12 @@ ALTER TABLE notice
 
 
 ## 7. DML
+- 회원
+
+- 매칭 & 커뮤니티
+
+- 관리자
+
 
 ## 8. Test Case
 
