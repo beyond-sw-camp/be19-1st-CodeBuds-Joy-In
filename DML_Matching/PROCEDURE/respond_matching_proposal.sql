@@ -27,18 +27,23 @@ BEGIN
              SET is_matching_active = 1
            WHERE id IN (user_id1, user_id2);
       END IF;
-   END IF;
-	    -- 유저별 1:1 매칭에 기록
+   -- 유저별 1:1 매칭에 기록
 	INSERT INTO member_matching(status,certification, member_id, matching_id)
    VALUES 
 		    (user_response1, 0, user_id1, user_matching_code1),
-          (user_response2, 0, user_id2, user_matching_code2); 
-   
-   SELECT 
+          (user_response2, 0, user_id2, user_matching_code2);    
+   -- 응답을 완료한 타임에 시간을 업데이트
+	UPDATE matching
+      SET start_date = NOW()
+    WHERE id = user_matching_code1;
+	
+	SELECT 
           STATUS INTO matching_status
      FROM matching
     WHERE id = user_matching_code1;
     
+   END IF;
+
 END//
 
 DELIMITER ;
