@@ -334,6 +334,124 @@ ADD CONSTRAINT fk_post_member_board_id FOREIGN KEY(board_id) REFERENCES board(id
 ```
 </details>
 
+<details>
+	<summary>매칭 관련 테이블</summary>
+
+ ```SQL
+CREATE TABLE  matching  (
+	 id integer PRIMARY KEY AUTO_INCREMENT,
+	 status 	tinyint(1)	NOT NULL,
+	 start_date datetime NOT NULL
+);
+
+CREATE TABLE  member_matching  (
+	 id integer PRIMARY KEY AUTO_INCREMENT,
+	 status 	char	NOT NULL,
+	 certification 	tinyint(1)	NOT NULL,
+	 member_id 	integer	NULL,
+	 matching_id 	integer	NOT NULL,
+	 CONSTRAINT ch_member_matching_status check(status IN ('Y', 'N'))
+);
+
+CREATE TABLE  group_review  (
+	 id integer PRIMARY KEY AUTO_INCREMENT,
+	 score 	integer	NOT NULL,
+	 review 	varchar(2000)	NULL,
+	 created_by 	datetime	NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	 target_member_id 	integer	NULL,
+	 join_request_id integer NOT NULL
+);
+
+CREATE TABLE  join_request  (
+	 id integer PRIMARY KEY AUTO_INCREMENT,
+	 status 	char	NOT NULL ,
+	 certification 	tinyint(1)	NOT NULL,
+	 post_id 	integer	NOT NULL,
+	 member_id 	integer	NULL,
+	 CONSTRAINT ch_join_request_status check(status IN ('Y', 'N', 'U'))
+);
+
+CREATE TABLE  matching_review  (
+	 id integer PRIMARY KEY AUTO_INCREMENT,
+	 score 	integer	NOT NULL,
+	 review 	varchar(2000)	NULL,
+	 created_by 	datetime	NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	 target_member_id 	integer	NULL
+);
+```
+</details>
+
+<details>
+	<summary>제약조건</summary>
+
+ ```SQL
+
+ALTER TABLE member
+	ADD CONSTRAINT fk_member_rank_rank_id FOREIGN KEY (rank_id) REFERENCES rank (id),
+	ADD CONSTRAINT fk_member_member_status_status_id FOREIGN KEY (status_id) REFERENCES member_status (id);
+
+ALTER TABLE member_info
+	ADD CONSTRAINT fk_member_info_member_member_id FOREIGN KEY (member_id) REFERENCES member (id),
+	ADD CONSTRAINT fk_member_info_preference_preference_id FOREIGN KEY (preference_id) REFERENCES preference (id);
+
+ALTER TABLE member_preference
+	ADD CONSTRAINT fk_member_preference_member_member_id FOREIGN KEY (member_id) REFERENCES member (id),
+	ADD CONSTRAINT fk_member_preference_member_preference_id FOREIGN KEY (preference_id) REFERENCES preference (id);
+
+ALTER TABLE member_report
+	ADD CONSTRAINT fk_member_report_member_member_id FOREIGN KEY (member_id) REFERENCES member (id),
+	ADD CONSTRAINT fk_member_report_member_target_member_id FOREIGN KEY (target_member_id) REFERENCES member (id),
+	ADD CONSTRAINT fk_member_report_report_report_id FOREIGN KEY (report_id) REFERENCES report (id);
+
+ALTER TABLE login_history
+	ADD CONSTRAINT fk_login_history_member_member_id FOREIGN KEY(member_id) REFERENCES member(id);
+
+ALTER TABLE member_language
+	ADD CONSTRAINT fk_member_language_member_member_id FOREIGN KEY (member_id) REFERENCES member (id),
+	ADD CONSTRAINT fk_member_language_languages_lang_id FOREIGN KEY (language_id) REFERENCES languages (id);
+
+ALTER TABLE preference
+	ADD CONSTRAINT fk_preference_preference_parent_id FOREIGN KEY (parent_id) REFERENCES preference (id);
+
+ALTER TABLE password_history
+	ADD CONSTRAINT fk_password_history_member_member_id FOREIGN KEY (member_id) REFERENCES member (id);
+
+ALTER TABLE member_status_history
+	ADD CONSTRAINT fk_member_status_history_member_member_id FOREIGN KEY (member_id) REFERENCES member (id),
+	ADD CONSTRAINT fk_member_status_history_admin_admin_id FOREIGN KEY (admin_id) REFERENCES admin (id),
+	ADD CONSTRAINT fk_member_status_history_previous_status_id FOREIGN KEY (previous_status_id) REFERENCES member_status (id),
+	ADD CONSTRAINT fk_member_status_history_new_status_id FOREIGN KEY (new_status_id) REFERENCES member_status (id);
+	
+ALTER TABLE member_ban
+	ADD CONSTRAINT fk_member_ban_member_member_id FOREIGN KEY (member_id) REFERENCES member (id);
+
+ALTER TABLE member_ban
+	ADD CONSTRAINT fk_member_ban_admin_admin_id FOREIGN KEY (admin_id) REFERENCES admin (id);
+
+ALTER TABLE member_ban
+	ADD CONSTRAINT fk_member_ban_ban_rule_ban_rule_id FOREIGN KEY (ban_rule_id) REFERENCES ban_rule (id);
+
+ALTER TABLE blacklist
+	ADD CONSTRAINT fk_blacklist_blacklist_rule_blacklist_rule_id FOREIGN KEY (blacklist_rule_id) REFERENCES blacklist_rule (id);
+
+ALTER TABLE blacklist
+	ADD CONSTRAINT fk_blacklist_admin_admin_id FOREIGN KEY (admin_id) REFERENCES admin (id);
+
+ALTER TABLE notice
+	ADD CONSTRAINT fk_notice_admin_admin_id FOREIGN KEY (admin_id) REFERENCES admin (id);
+
+ ALTER TABLE member_matching ADD CONSTRAINT fk_member_matching_member_member_id FOREIGN KEY (member_id) REFERENCES member (id)
+ ALTER TABLE member_matching ADD CONSTRAINT fk_member_matching_matching_matching_id FOREIGN KEY (matching_id) REFERENCES matching (id)
+ 
+ ALTER TABLE group_review ADD CONSTRAINT fk_group_review_member_matching_id FOREIGN KEY (join_request_id ) REFERENCES join_request(id)
+ 
+ ALTER TABLE join_request ADD CONSTRAINT fk_join_request_member_member_id FOREIGN KEY (member_id) REFERENCES member (id)
+ ALTER TABLE join_request ADD CONSTRAINT fk_join_request_post_post_id FOREIGN KEY (post_id) REFERENCES post (id)
+ 
+ ALTER TABLE matching_review ADD CONSTRAINT fk_matching_review_join_request_id FOREIGN KEY (id) REFERENCES member_matching(id)
+```
+</details>
+
 
 ## 7. DML
 
