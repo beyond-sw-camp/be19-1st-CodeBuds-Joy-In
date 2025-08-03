@@ -487,14 +487,14 @@ ALTER TABLE notice
 
 ## 7. DML
 - 회원
-  <a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/Customer" target="_blank"> 🪝회원 프로시저/쿼리 </a>
+  <br><a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/Customer" target="_blank"> 🪝회원 프로시저/쿼리 </a>
 
 - 매칭 & 커뮤니티
-  <a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/DML" target="_blank"> 🪝커뮤니티 테이블 별 프로시저/트리거/쿼리 </a>
-  <a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/community" target="_blank"> 🪝post/join_request 관련 프로시저/트리거/쿼리 </a>
+  <br><a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/DML" target="_blank"> 🪝커뮤니티 테이블 별 프로시저/트리거/쿼리 </a>
+  <br><a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/community" target="_blank"> 🪝post/join_request 관련 프로시저/트리거/쿼리 </a>
 
 - 관리자
-  <a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/admin" target="_blank"> 🪝관리자 프로시저/트리거/쿼리 </a>
+  <Br><a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/admin" target="_blank"> 🪝관리자 프로시저/트리거/쿼리 </a>
 
 
 ## 8. Test Case
