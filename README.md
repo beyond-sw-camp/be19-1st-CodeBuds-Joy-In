@@ -1,6 +1,6 @@
 
 # Joy-In🚤
-<img width="1004" height="1004" alt="Image" src="https://github.com/user-attachments/assets/6c5888ad-6089-43e0-8fa8-00e5ad48ce53" />
+<img width="800" height="450" alt="Image" src="https://github.com/user-attachments/assets/0a37d6b1-7b43-4073-8c5c-39fd128eb43a" />
 
 ## 프로젝트 소개
 
