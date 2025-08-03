@@ -3,6 +3,22 @@
 <img width="600" height="380" alt="Image" src="https://github.com/user-attachments/assets/0a37d6b1-7b43-4073-8c5c-39fd128eb43a" />
 
 ## 프로젝트 소개
+### 프로젝트 개요
+현대인들은 혼자서도 자유롭게 여행하거나 취미 활동을 즐기지만,  
+때로는 “지금 이 순간, 함께할 사람”을 필요로 합니다.
+
+하지만 기존 번개 모임 앱들은
+
+- **참여 인원이 너무 많거나**
+    
+- **정해진 시간/장소에만 참여해야 하며**
+    
+- **나와 맞는 사람을 찾는 데 많은 시간과 노력이 필요합니다.**
+    
+
+**Joy-in은 이런 불편함을 해결하기 위해 탄생했습니다.**  
+내가 원하는 순간, 나와 취향이 맞는 사람과 즉시 연결되는 “실시간 번개 매칭 서비스”입니다.
+
 
 ## 팀원
 |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/4da0c5f9-3d48-44d2-ae21-860a027a4e1c" /> |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/3200b60c-20c6-495d-87b8-a4fadff9827a" /> |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/ef2e5d74-09ed-4d47-b1b7-34ae8a607d19" /> |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/10fa156a-1f3f-4d71-a2d7-944723c7c26d" /> | <img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/3e31cd21-699c-43db-8f73-72f5354a3a8a" />|
@@ -10,8 +26,23 @@
 |강지륜|강형규|민수현|윤서진|이승건|
 
 ## 1. 개발 환경
+|<img width="100" height="95" alt="Image" src="https://github.com/user-attachments/assets/ec56bfb4-ebfe-4601-a1d5-20a51082937b" />|<img width="100" height="100" alt="Image" src="https://github.com/user-attachments/assets/5caf3ad3-da2b-459f-8b9b-b8ca260f5f96" />|<img width="80" height="80" alt="Image" src="https://github.com/user-attachments/assets/07eb1139-3dfb-4a60-a16f-2764d82daa7e" />|<img width="100" height="95" alt="Image" src="https://github.com/user-attachments/assets/73071594-2716-4222-a226-2a0b680a089e" />|<img width="100" height="100" alt="Image" src="https://github.com/user-attachments/assets/953266e3-7da6-4344-af1a-796468762ba0" />|
+| :------: | :------: | :------: | :------: | :------: |
+|MariaDB|Notion|Ubuntu|VirtualBox|GitHub|
+
 
 ## 2. 주요 기능
+- **일대일 매칭** : 나이대, MBTI, 선호 여행 방식 등 다양한 기준으로 근처의 유저와 자동 매칭
+
+- **자유/여행지 추천 게시판** : 여행자들끼리 서로 소통하고 정보를 공유
+
+- **동행 게시판** : 여행 중 다수의 인원을 자유롭게 만날 수 있도록 모집 및 참여 가능
+
+- **후기** : 만남 이후 서로에게 후기와 평점 남기기
+
+- **등급** : 평점을 토대로 점수를 책정해 등급 상승 및 하락
+
+
 
 ## 3. 요구사항 명세서
 
@@ -22,7 +53,7 @@
 
 ## 5. DB 모델링
 ### 논리 모델링
-<img width="1447" height="1532" alt="Image" src="https://github.com/user-attachments/assets/ab583b0d-a8d1-46cb-8067-b96c1548b026" />
+<img width="2893" height="2208" alt="Image" src="https://github.com/user-attachments/assets/739ca6de-c53b-4796-838e-92823d622fae" />
 
 ### 물리 모델링
 <img width="3054" height="1671" alt="Image" src="https://github.com/user-attachments/assets/9621785f-9daf-4159-b9bd-1355d615fef8" />
