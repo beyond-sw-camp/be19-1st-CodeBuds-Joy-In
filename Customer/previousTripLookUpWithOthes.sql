@@ -14,7 +14,7 @@ begin
          , d.nickname as '닉네임'
          , e.name as '등급'
          , group_concat(g.name order by g.id SEPARATOR ',') as '성향'
-
+         , b.member_id
     from (
              select
                  a.member_id
