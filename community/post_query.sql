@@ -10,7 +10,7 @@ BEGIN
     IF NEW.status = 'Y' AND OLD.status <> 'Y' THEN
 UPDATE post
 SET current_count = IFNULL(current_count, 0) + 1
-WHERE post_id = NEW.post_id;
+WHERE id = NEW.post_id;
 END IF;
 END //
 
@@ -52,19 +52,19 @@ post_status INTEGER;
 NEW.status = 'N' AND OLD.status <> 'N' then
 UPDATE post
 SET current_count = current_count - 1
-WHERE post_id = NEW.post_id;
+WHERE id = NEW.post_id;
 
 
 SELECT recruitment_status
 INTO post_status
 FROM post
-WHERE post_id = NEW.post_id;
+WHERE id = NEW.post_id;
 
 if
 post_status = 1 then
 UPDATE post
 SET recruitment_status = 0
-WHERE post_id = NEW.post_id;
+WHERE id = NEW.post_id;
 
 END if;
 END if;
