@@ -43,7 +43,7 @@ main: begin
     EXECUTE stmt2;
     DEALLOCATE PREPARE stmt2;
 
-    set returnMessage = @insert_sql;
+    set returnMessage = '성향 정보가 수정 되었습니다.';
 
 
 end //
