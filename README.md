@@ -5,7 +5,7 @@
 ## 프로젝트 소개
 
 ## 팀원
-|<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/4da0c5f9-3d48-44d2-ae21-860a027a4e1c" /> |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/3200b60c-20c6-495d-87b8-a4fadff9827a" /> |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/ef2e5d74-09ed-4d47-b1b7-34ae8a607d19" /> |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/10fa156a-1f3f-4d71-a2d7-944723c7c26d" /> | |
+|<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/4da0c5f9-3d48-44d2-ae21-860a027a4e1c" /> |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/3200b60c-20c6-495d-87b8-a4fadff9827a" /> |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/ef2e5d74-09ed-4d47-b1b7-34ae8a607d19" /> |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/10fa156a-1f3f-4d71-a2d7-944723c7c26d" /> | <img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/3e31cd21-699c-43db-8f73-72f5354a3a8a" />|
 |:---:|:---:|:---:|:---:|:---:|
 |강지륜|강형규|민수현|윤서진|이승건|
 
