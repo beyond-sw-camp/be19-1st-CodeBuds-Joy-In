@@ -556,7 +556,7 @@ ALTER TABLE notice
 
 <details>
 	<summary>관리자</summary>
-	<details>
+	&nbsp;&nbsp;<details>
 		<summary>1:1 매칭 성사 조회</summary>
 		<br><p>- member_matching 테이블 조회</p>
 		<img width="1232" height="553" alt="Image" src="https://github.com/user-attachments/assets/7bc631c0-4309-46b3-9d27-93e45bd867b9" />
