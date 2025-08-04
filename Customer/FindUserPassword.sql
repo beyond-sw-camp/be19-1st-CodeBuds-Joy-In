@@ -1,4 +1,5 @@
 
+
 -- 비밀번호 찾기 
 -- 임시비밀번호로 바꾼후 임시비밀번호 회원에게 제공.
 
@@ -7,7 +8,6 @@ delimiter //
 create or replace procedure FindUserPassword(
     in userEmail varchar(255),
     in userPhone varchar(255),
-    in userPassword varchar(255),
     out returnMessage varchar(2000)
 )
 main: begin
@@ -16,18 +16,15 @@ main: begin
     declare randomPassword varchar(10);
     declare encryptedPassword varchar(255);
     declare userName varchar(20);
-    declare tempPassword varchar(200);
     set randomPassword = '';
 
 
-    call PasswordEncrypted(userPassword, tempPassword);
 
     select
-           name into userName
-      from member
-     where email = userEmail
-       and phone = userPhone
-       and password = tempPassword;
+        name into userName
+    from member
+    where email = userEmail
+      and phone = userPhone;
 
     if userName <> '' then
 
