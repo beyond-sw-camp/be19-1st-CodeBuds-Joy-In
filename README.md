@@ -1,4 +1,4 @@
-![비밀번호 암호화](https://github.com/user-attachments/assets/9ef24008-62fe-4916-b503-0f95909440b1)![_비밀번호 찾기](https://github.com/user-attachments/assets/f8a5313f-ce88-4946-83cf-0799d3995b3a)
+
 # Joy-In🚤
 <img width="600" height="380" alt="Image" src="https://github.com/user-attachments/assets/0a37d6b1-7b43-4073-8c5c-39fd128eb43a" />
 
@@ -19,6 +19,9 @@
 **Joy-in은 이런 불편함을 해결하기 위해 탄생했습니다.**  
 내가 원하는 순간, 나와 취향이 맞는 사람과 즉시 연결되는 “실시간 번개 매칭 서비스”입니다.
 
+**발표 자료**
+<br>
+https://www.figma.com/slides/jrtHrlLx3IXlkBGGzHsYLV/JoyIn?node-id=1-848&t=NV00VWpKIyLq0Ncv-0
 
 ## 팀원
 |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/4da0c5f9-3d48-44d2-ae21-860a027a4e1c" /> |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/3200b60c-20c6-495d-87b8-a4fadff9827a" /> |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/ef2e5d74-09ed-4d47-b1b7-34ae8a607d19" /> |<img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/10fa156a-1f3f-4d71-a2d7-944723c7c26d" /> | <img width="150" height="150" alt="Image" src="https://github.com/user-attachments/assets/3e31cd21-699c-43db-8f73-72f5354a3a8a" />|
@@ -499,7 +502,7 @@ ALTER TABLE notice
 
 
 ## 8. Test Case
-<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTbzFSfMc7xw5tNd2A0PAL6z-a-O3o-sPAqGgODT9_A_0e6yksYnKfb_XYyZvTIJG3IviuHjZW66t6y/pubhtml?gid=423249820&single=true" target="_blank"> 🪝테이블케이스 </a>
+<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTbzFSfMc7xw5tNd2A0PAL6z-a-O3o-sPAqGgODT9_A_0e6yksYnKfb_XYyZvTIJG3IviuHjZW66t6y/pubhtml?gid=423249820&single=true" target="_blank"> 🪝테스트 케이스 </a>
 <br><br><p>- 마스터 슬레이브 레플리케이션</p>
 <img width="3158" height="1178" alt="Image" src="https://github.com/user-attachments/assets/0f151afe-38f1-4bba-80ec-4c52ace12e1d" />
 
@@ -508,7 +511,7 @@ ALTER TABLE notice
 	<summary>회원</summary>
 		<br><p>- 로그인 기능</p>
 		<img width="3158" height="1178" alt="Image" src="https://github.com/user-attachments/assets/dad87f51-2830-4243-8b7d-3dc81619e880" />
-		<br><br><p>- 아이디 찾</p>
+		<br><br><p>- 아이디 찾기</p>
 		<img width="3158" height="1178" alt="Image" src="https://github.com/user-attachments/assets/885dc2a5-681f-4968-9f27-00dc2afa6678" />
 		<br><br><p>- 비밀번호 찾기</p>
 		<img width="3158" height="1178" alt="Image" src="https://github.com/user-attachments/assets/66c153a2-329f-462d-a2c2-2cb40a0b1c3c" />
