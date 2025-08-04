@@ -487,28 +487,76 @@ ALTER TABLE notice
 
 ## 7. DML
 - 회원
+  <br><a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/Customer" target="_blank"> 🪝회원 프로시저/쿼리 </a>
 
 - 매칭 & 커뮤니티
+  <br><a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/DML" target="_blank"> 🪝커뮤니티 테이블 별 프로시저/트리거/쿼리 </a>
+  <br><a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/community" target="_blank"> 🪝post/join_request 관련 프로시저/트리거/쿼리 </a>
+  <br><a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/develop/DML_Matching" target="_blank"> 🪝매칭및 후기 관련 프로시저/트리거/쿼리 </a>
 
 - 관리자
+  <Br><a href="https://github.com/BY-CodeBuds/be19-1st-CodeBuds-JoyIn/tree/6996f069b7eff558c4c772c474179cfb4f1a2aee/admin" target="_blank"> 🪝관리자 프로시저/트리거/쿼리 </a>
 
 
 ## 8. Test Case
+<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTbzFSfMc7xw5tNd2A0PAL6z-a-O3o-sPAqGgODT9_A_0e6yksYnKfb_XYyZvTIJG3IviuHjZW66t6y/pubhtml?gid=423249820&single=true" target="_blank"> 🪝테이블케이스 </a>
+
 <details>
 	<summary>회원</summary>
 </details>
 
 <details>
-	<summary>커뮤니티</summary>
+	<summary>게시판</summary>
+	<details>
+		<summary>동행 게시판</summary>
+		<br><p>- 등록된 게시글 확인</p>
+		<img width="3158" height="1178" alt="Image" src="https://github.com/user-attachments/assets/0045bed9-f8c8-46f1-b51d-e0c5e00a1919" />
+		<br><br><p>- 해당 게시글의 동행 요청자 조회</p>
+		<img width="3076" height="1138" alt="Image" src="https://github.com/user-attachments/assets/5717cc72-f45a-46b8-a2cc-050afb19aa74" />
+		<br><br><p>- 동행 요청</p>
+		<img width="2774" height="1222" alt="Image" src="https://github.com/user-attachments/assets/f5c8b92d-6b8f-46f2-8c29-f602febb1112" />
+		<br><br><p>- 동행 요청 수락/거절</p>
+		<img width="2912" height="1134" alt="Image" src="https://github.com/user-attachments/assets/a3df6287-0610-4c4f-8e06-2ac580cef5af" />
+		<br><br><p>- 동행 확정인원수 갱신 트리거</p>
+		<img width="826" height="655" alt="Image" src="https://github.com/user-attachments/assets/e3552ffe-a156-470e-b3c6-350db62d3098" />
+		<br><br><p>- 강퇴 시 작동 트리거</p>
+		<img width="1358" height="1500" alt="Image" src="https://github.com/user-attachments/assets/193a6134-ae00-43e0-968b-65a29d2ea001" />
+		<br><br><p>- 동행 게시글의 모집 확정된 인원수 확인</p>
+		<img width="1229" height="626" alt="Image" src="https://github.com/user-attachments/assets/5f979aee-2f2c-4501-bd9a-ed1e3a9b837b" />
+		<br><br><p>- 모집인원수를 채우면 자동 마감</p>
+		<img width="2824" height="1160" alt="Image" src="https://github.com/user-attachments/assets/8dfb4f46-4fee-4af5-8a29-debc516e905c" />
+		<br><br><p>- 자동마감 프로시저</p>
+		<img width="2512" height="1190" alt="Image" src="https://github.com/user-attachments/assets/19d9d81b-f990-414e-9eed-6b9e9a9508ec" />
+	</details>
+	<details>
+		<summary>신고</summary>
+		<br><p>- 게시글 및 댓글 신고</p>
+		<img width="3420" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0863fdef-59b3-4412-9db0-1a1666771faf" />
+		<br><br><p>- 게시글 및 댓글 신고 관리자 승인 및 거절</p>
+		<img width="2158" height="1288" alt="Image" src="https://github.com/user-attachments/assets/e99a2b47-cbbd-4576-bd5e-e3b9b4b91614" />
+		<br><br><p>- 누적된 게시글/댓글 신고 수 확인 트리거</p>
+		<img width="1494" height="1374" alt="Image" src="https://github.com/user-attachments/assets/0ebdb0a4-363c-45f3-bde1-dbe167174882" />
+		<img width="1512" height="1374" alt="Image" src="https://github.com/user-attachments/assets/81ad4881-13b0-4849-9d22-2ef01a45cd02" />
+		<br><br><p>- 같은 회원이 10번 이상 신고당할 시 블랙리스트</p>
+		<img width="2888" height="1036" alt="Image" src="https://github.com/user-attachments/assets/12b5e2b7-a0f9-4645-9606-eb028ea2ba14" />
+	</details>
 </details>
 
 <details>
 	<summary>매칭</summary>
+	<br><p>- 매칭 제안 및 응답 </p>
+	<img width="1232" height="553" alt="Image" src="https://github.com/user-attachments/assets/5b4e7dea-816b-419e-994d-b19468d1d088" />
+	<br><p>- 매칭 5회 연속 거절로 인한 매칭 제재 </p>
+	<img width="1232" height="553" alt="Image" src="https://github.com/user-attachments/assets/5b29178e-f4fc-4e60-aa98-01c9ab01f832" />
+	<br><p>- 후기 작성 </p>
+	<img width="1232" height="553" alt="Image" src="https://github.com/user-attachments/assets/147cb424-a83d-4b2e-9e41-2fa830359081" />
+
+  
 </details>
 
 <details>
 	<summary>관리자</summary>
-	<details>
+	&nbsp;&nbsp;<details>
 		<summary>1:1 매칭 성사 조회</summary>
 		<br><p>- member_matching 테이블 조회</p>
 		<img width="1232" height="553" alt="Image" src="https://github.com/user-attachments/assets/7bc631c0-4309-46b3-9d27-93e45bd867b9" />
@@ -543,4 +591,53 @@ ALTER TABLE notice
 	</details>
 </details>
 
-## 9. 회고록
+## 9. 동료 평가
+- 강지륜
+
+|이름|평가|
+|:---:|---|
+|강형규| |
+|민수현| |
+|윤서진| |
+|이승건| |
+<br>
+
+- 강형규
+
+|이름|평가|
+|:---:|---|
+|강지륜| |
+|민수현| |
+|윤서진| |
+|이승건| |
+<br>
+
+- 민수현
+
+|이름|평가|
+|:---:|---|
+|강지륜| |
+|강형규| |
+|윤서진| |
+|이승건| |
+<br>
+
+- 윤서진
+
+|이름|평가|
+|:---:|---|
+|강지륜| |
+|강형규| |
+|민수현| |
+|이승건| |
+<br>
+
+- 이승건
+
+|이름|평가|
+|:---:|---|
+|강지륜| |
+|강형규| |
+|민수현| |
+|윤서진| |
+<br>
