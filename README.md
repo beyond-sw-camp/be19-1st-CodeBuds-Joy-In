@@ -1,4 +1,4 @@
-
+![비밀번호 암호화](https://github.com/user-attachments/assets/9ef24008-62fe-4916-b503-0f95909440b1)![_비밀번호 찾기](https://github.com/user-attachments/assets/f8a5313f-ce88-4946-83cf-0799d3995b3a)
 # Joy-In🚤
 <img width="600" height="380" alt="Image" src="https://github.com/user-attachments/assets/0a37d6b1-7b43-4073-8c5c-39fd128eb43a" />
 
@@ -500,9 +500,21 @@ ALTER TABLE notice
 
 ## 8. Test Case
 <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTbzFSfMc7xw5tNd2A0PAL6z-a-O3o-sPAqGgODT9_A_0e6yksYnKfb_XYyZvTIJG3IviuHjZW66t6y/pubhtml?gid=423249820&single=true" target="_blank"> 🪝테이블케이스 </a>
+<br><br><p>- 마스터 슬레이브 레플리케이션</p>
+<img width="3158" height="1178" alt="Image" src="https://github.com/user-attachments/assets/0f151afe-38f1-4bba-80ec-4c52ace12e1d" />
 
 <details>
+	<details>
 	<summary>회원</summary>
+		<br><p>- 로그인 기능</p>
+		<img width="3158" height="1178" alt="Image" src="https://github.com/user-attachments/assets/dad87f51-2830-4243-8b7d-3dc81619e880" />
+		<br><br><p>- 아이디 찾</p>
+		<img width="3158" height="1178" alt="Image" src="https://github.com/user-attachments/assets/885dc2a5-681f-4968-9f27-00dc2afa6678" />
+		<br><br><p>- 비밀번호 찾기</p>
+		<img width="3158" height="1178" alt="Image" src="https://github.com/user-attachments/assets/66c153a2-329f-462d-a2c2-2cb40a0b1c3c" />
+		<br><br><p>- 비밀번호 암호화</p>
+		<img width="3158" height="1178" alt="Image" src="https://github.com/user-attachments/assets/2f13f78f-7cae-46f3-90cb-39d0674480a1" />
+	</details>
 </details>
 
 <details>
