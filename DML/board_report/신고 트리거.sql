@@ -1,8 +1,8 @@
 -- 게시글/댓글 신고 들어올 때 누적 횟수 확인하는 트리거
 DELIMITER // 
 
-CREATE OR REPLACE TRIGGER after_insert_board_report
-    AFTER insert
+CREATE OR REPLACE TRIGGER after_update_board_report
+    AFTER update
     ON board_report
     FOR EACH ROW
 BEGIN
@@ -109,8 +109,8 @@ DELIMITER ;
 -- 정지될 때 누적 횟수 확인하는 트리거
 DELIMITER // 
 
-CREATE OR REPLACE TRIGGER after_insert_member_report
-    AFTER insert
+CREATE OR REPLACE TRIGGER after_update_member_report
+    AFTER update
     ON member_report
     FOR EACH ROW
 BEGIN
